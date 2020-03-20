@@ -70,6 +70,8 @@ export default class ArrowKeyStepperExample extends React.PureComponent {
     if (event.button === 0) {
       this.setState({
         isMouseDown: true,
+        scrollToColumn: columnIndex,
+        scrollToRow: rowIndex,
         startCellIndex: columnIndex,
         startRowIndex: rowIndex,
         selectedItems: []

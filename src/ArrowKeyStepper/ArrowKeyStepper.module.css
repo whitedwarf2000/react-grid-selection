@@ -33,6 +33,10 @@
   margin-right: 5px;
 }
 
+.FocusedCell.selected {
+  border: 2px solid #00aff2b5;
+}
+
 .selected {
   background-color: #039cf529;
   border-right: 1px solid #0991f1d6;
