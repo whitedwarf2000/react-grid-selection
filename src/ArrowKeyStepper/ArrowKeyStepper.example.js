@@ -151,7 +151,7 @@ export default class ArrowKeyStepperExample extends React.PureComponent {
     return (1 + (index % 3)) * 30;
   };
 
-  compare = (rowIndex, columnIndex) => {
+  detectSelectedCell = (rowIndex, columnIndex) => {
     const { selectedItems } = this.state;
     return selectedItems.length <=1 ? false : selectedItems.some(item => {
       return item.r === rowIndex && item.c === columnIndex;
@@ -169,7 +169,7 @@ export default class ArrowKeyStepperExample extends React.PureComponent {
     const className = clsx(styles.Cell, {
       [styles.FocusedCell]:
         columnIndex === scrollToColumn && rowIndex === scrollToRow,
-      [styles.selected]: this.compare(rowIndex, columnIndex)
+      [styles.selected]: this.detectSelectedCell(rowIndex, columnIndex)
     });
 
     return (
