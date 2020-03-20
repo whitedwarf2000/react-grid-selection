@@ -1,0 +1,47 @@
+.Grid {
+  border: 1px solid #e0e0e0;
+}
+
+.Cell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  outline: none;
+  cursor: pointer;
+}
+
+.FocusedCell {
+  background-color: transparent;
+  font-weight: bold;
+  border: 2px solid #00aff2b5;
+}
+
+.Radio {
+  margin-left: 0.5rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  margin-right: 5px;
+}
+
+.selected {
+  background-color: #039cf529;
+  border-right: 1px solid #0991f1d6;
+  border-bottom: 1px solid #0991f1d6;
+}
+
+*, *::after, *::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
+}
